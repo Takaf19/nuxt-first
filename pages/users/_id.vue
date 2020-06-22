@@ -4,6 +4,11 @@
 
 <script>
 export default {
+  head(){
+    return{
+      title: this.user.name,
+    }
+  },
   data() {
     return {
       id: this.$route.params.id,
